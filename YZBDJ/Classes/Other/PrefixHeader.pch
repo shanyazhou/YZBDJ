@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  YZBDJ
+//
+//  Created by lilida on 2018/2/12.
+//  Copyright © 2018年 shanyazhou. All rights reserved.
+//
+
+#define AAA 300
+
+
+/** 自定义打印 */
+#ifdef DEBUG
+#define YZLog(...) NSLog(__VA_ARGS__)
+#else
+#define YZLog(...)
+#endif
+
+#define YZFUNC YZLog(@"%s",__func__)
+
+#import "UIView+YZFrame.h"
+#import "UIBarButtonItem+YZBarButtonItem.h"
