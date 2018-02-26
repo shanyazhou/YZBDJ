@@ -12,4 +12,7 @@
 + (UIBarButtonItem *)itemWithImage:(UIImage *)image HighImage:(UIImage *)highImage Target:(id)target action:(SEL)action;
 
 + (UIBarButtonItem *)itemWithImage:(UIImage *)image SelImage:(UIImage *)selectImage Target:(id)target action:(SEL)action;
+
+/*返回按钮**/
++ (UIBarButtonItem *)itemWithImage:(UIImage *)image HighImage:(UIImage *)highImage Target:(id)target action:(SEL)action title:(NSString *)title;
 @end

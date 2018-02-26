@@ -8,6 +8,16 @@
 
 #define AAA 300
 
+/******屏幕尺寸********/
+#define YZScreenWidth [UIScreen mainScreen].bounds.size.width
+#define YZScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define isIphone4s YZScreenHeight == 480
+#define isIphone5 YZScreenHeight == 568
+#define isIphone6 YZScreenHeight == 667
+#define isIphone6s YZScreenHeight == 736
+/******屏幕尺寸********/
+
 
 /** 自定义打印 */
 #ifdef DEBUG

@@ -16,12 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"jump" style:0 target:self action:@selector(jumpBtnClick)];
+    self.title = @"设置";
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)jumpBtnClick
+{
+    UIViewController *tempVc = [[UIViewController alloc] init];
+    tempVc.view.backgroundColor = [UIColor greenColor];
+    [self.navigationController pushViewController:tempVc animated:YES];
 }
 
 #pragma mark - Table view data source

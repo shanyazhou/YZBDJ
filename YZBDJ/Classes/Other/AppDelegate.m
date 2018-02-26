@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "YZTabBarController.h"
+#import "YZAdViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,9 @@
     
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
+    
+//    YZAdViewController *adVc = [[YZAdViewController alloc] init];
+//    self.window.rootViewController = adVc;
     
     YZTabBarController *tab = [[YZTabBarController alloc] init];
     self.window.rootViewController = tab;

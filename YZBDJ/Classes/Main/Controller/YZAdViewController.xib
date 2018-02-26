@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YZAdViewController">
+            <connections>
+                <outlet property="adImage" destination="6ij-1t-PAD" id="AHj-Wd-kNa"/>
+                <outlet property="jumpBtn" destination="ETc-vL-kcz" id="Nbx-ZW-9xD"/>
+                <outlet property="view" destination="iN0-l3-epB" id="9X8-lF-t8f"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6ij-1t-PAD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETc-vL-kcz">
+                    <rect key="frame" x="290" y="20" width="65" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.36081977739726034" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="9dV-2g-8jX"/>
+                    </constraints>
+                    <state key="normal" title="跳过(3s)">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.28909565729999998" green="1" blue="0.2094127043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="6ij-1t-PAD" secondAttribute="bottom" id="E5t-kR-wFl"/>
+                <constraint firstItem="6ij-1t-PAD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Q1W-mO-CWY"/>
+                <constraint firstItem="ETc-vL-kcz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="llu-sC-WFR"/>
+                <constraint firstAttribute="trailing" secondItem="ETc-vL-kcz" secondAttribute="trailing" constant="20" id="nl0-2D-Vkj"/>
+                <constraint firstAttribute="trailing" secondItem="6ij-1t-PAD" secondAttribute="trailing" id="oAI-qI-g9a"/>
+                <constraint firstItem="6ij-1t-PAD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="u0S-sn-4Ud"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
