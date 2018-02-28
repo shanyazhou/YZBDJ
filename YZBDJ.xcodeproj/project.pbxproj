@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1222DA0F2043ADB8006A6D2A /* YZAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1222DA0E2043ADB8006A6D2A /* YZAdViewController.m */; };
-		1222DA112043ADD8006A6D2A /* YZAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1222DA102043ADD8006A6D2A /* YZAdViewController.xib */; };
 		1222DA1A2043B5F2006A6D2A /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1222DA132043B5F2006A6D2A /* LaunchImage-568h@2x.png */; };
 		1222DA1B2043B5F2006A6D2A /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1222DA142043B5F2006A6D2A /* LaunchImage-700-568h@2x.png */; };
 		1222DA1C2043B5F2006A6D2A /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1222DA152043B5F2006A6D2A /* LaunchImage-700@2x.png */; };
@@ -16,11 +14,15 @@
 		1222DA1E2043B5F2006A6D2A /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1222DA172043B5F2006A6D2A /* LaunchImage-800-Portrait-736h@3x.png */; };
 		1222DA1F2043B5F2006A6D2A /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1222DA182043B5F2006A6D2A /* LaunchImage.png */; };
 		1222DA202043B5F2006A6D2A /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1222DA192043B5F2006A6D2A /* LaunchImage@2x.png */; };
+		122829FA2045453D00DC336F /* YZAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 122829F92045453D00DC336F /* YZAdModel.m */; };
 		127F0CB220318361006FDAEE /* UIView+YZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 127F0CB120318361006FDAEE /* UIView+YZFrame.m */; };
 		127F0CB6203190A6006FDAEE /* UIBarButtonItem+YZBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 127F0CB5203190A6006FDAEE /* UIBarButtonItem+YZBarButtonItem.m */; };
 		127F0CB92031A317006FDAEE /* YZNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 127F0CB82031A317006FDAEE /* YZNavigationViewController.m */; };
 		127F0CBC2031A8B3006FDAEE /* YZSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 127F0CBB2031A8B3006FDAEE /* YZSettingViewController.m */; };
 		1286C548202D90F900A517F5 /* YZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1286C547202D90F900A517F5 /* YZTabBar.m */; };
+		128ADBA12046460D002FE727 /* YZAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 128ADB9C2046460D002FE727 /* YZAdViewController.m */; };
+		128ADBA22046460D002FE727 /* YZAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 128ADB9D2046460D002FE727 /* YZAdViewController.xib */; };
+		128ADBA32046460D002FE727 /* YZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 128ADBA02046460D002FE727 /* YZWebViewController.m */; };
 		129AAD572028273C00118A5A /* YZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 129AAD562028273C00118A5A /* YZTabBarController.m */; };
 		129AAD5B20282EA500118A5A /* UIImage+YZImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 129AAD5A20282EA500118A5A /* UIImage+YZImage.m */; };
 		12A555BE20244EF5000303BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A555B820244EF5000303BD /* AppDelegate.m */; };
@@ -33,12 +35,11 @@
 		12C81AFD2022B008004AC296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C81AFB2022B008004AC296 /* Main.storyboard */; };
 		12C81AFF2022B008004AC296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C81AFE2022B008004AC296 /* Assets.xcassets */; };
 		12C81B022022B008004AC296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C81B002022B008004AC296 /* LaunchScreen.storyboard */; };
+		5F0D83B779E368193A68A097 /* libPods-YZBDJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB0ADAD862EBE638E904F02 /* libPods-YZBDJ.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1222DA0D2043ADB8006A6D2A /* YZAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZAdViewController.h; sourceTree = "<group>"; };
-		1222DA0E2043ADB8006A6D2A /* YZAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZAdViewController.m; sourceTree = "<group>"; };
-		1222DA102043ADD8006A6D2A /* YZAdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YZAdViewController.xib; sourceTree = "<group>"; };
+		0BB0ADAD862EBE638E904F02 /* libPods-YZBDJ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YZBDJ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1222DA132043B5F2006A6D2A /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
 		1222DA142043B5F2006A6D2A /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
 		1222DA152043B5F2006A6D2A /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
@@ -46,6 +47,8 @@
 		1222DA172043B5F2006A6D2A /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
 		1222DA182043B5F2006A6D2A /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
 		1222DA192043B5F2006A6D2A /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
+		122829F82045453D00DC336F /* YZAdModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZAdModel.h; sourceTree = "<group>"; };
+		122829F92045453D00DC336F /* YZAdModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZAdModel.m; sourceTree = "<group>"; };
 		127F0CB020318361006FDAEE /* UIView+YZFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YZFrame.h"; sourceTree = "<group>"; };
 		127F0CB120318361006FDAEE /* UIView+YZFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YZFrame.m"; sourceTree = "<group>"; };
 		127F0CB320318457006FDAEE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -57,6 +60,11 @@
 		127F0CBB2031A8B3006FDAEE /* YZSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZSettingViewController.m; sourceTree = "<group>"; };
 		1286C546202D90F900A517F5 /* YZTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZTabBar.h; sourceTree = "<group>"; };
 		1286C547202D90F900A517F5 /* YZTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZTabBar.m; sourceTree = "<group>"; };
+		128ADB9B2046460D002FE727 /* YZAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZAdViewController.h; sourceTree = "<group>"; };
+		128ADB9C2046460D002FE727 /* YZAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZAdViewController.m; sourceTree = "<group>"; };
+		128ADB9D2046460D002FE727 /* YZAdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YZAdViewController.xib; sourceTree = "<group>"; };
+		128ADB9F2046460D002FE727 /* YZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZWebViewController.h; sourceTree = "<group>"; };
+		128ADBA02046460D002FE727 /* YZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZWebViewController.m; sourceTree = "<group>"; };
 		129AAD552028273C00118A5A /* YZTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZTabBarController.h; sourceTree = "<group>"; };
 		129AAD562028273C00118A5A /* YZTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZTabBarController.m; sourceTree = "<group>"; };
 		129AAD5920282EA500118A5A /* UIImage+YZImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+YZImage.h"; sourceTree = "<group>"; };
@@ -79,6 +87,8 @@
 		12C81AFE2022B008004AC296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12C81B012022B008004AC296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12C81B032022B008004AC296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A6F06AF89FC6CF8C4FFC66 /* Pods-YZBDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZBDJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YZBDJ/Pods-YZBDJ.debug.xcconfig"; sourceTree = "<group>"; };
+		F93D99E7F9B2D546E313E177 /* Pods-YZBDJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZBDJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-YZBDJ/Pods-YZBDJ.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F0D83B779E368193A68A097 /* libPods-YZBDJ.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +125,34 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		122829F72045453D00DC336F /* AdModel */ = {
+			isa = PBXGroup;
+			children = (
+				122829F82045453D00DC336F /* YZAdModel.h */,
+				122829F92045453D00DC336F /* YZAdModel.m */,
+			);
+			path = AdModel;
+			sourceTree = "<group>";
+		};
+		128ADB9A2046460D002FE727 /* adViewController */ = {
+			isa = PBXGroup;
+			children = (
+				128ADB9B2046460D002FE727 /* YZAdViewController.h */,
+				128ADB9C2046460D002FE727 /* YZAdViewController.m */,
+				128ADB9D2046460D002FE727 /* YZAdViewController.xib */,
+			);
+			path = adViewController;
+			sourceTree = "<group>";
+		};
+		128ADB9E2046460D002FE727 /* webViewController */ = {
+			isa = PBXGroup;
+			children = (
+				128ADB9F2046460D002FE727 /* YZWebViewController.h */,
+				128ADBA02046460D002FE727 /* YZWebViewController.m */,
+			);
+			path = webViewController;
+			sourceTree = "<group>";
+		};
 		129AAD512028267D00118A5A /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,13 +166,12 @@
 		129AAD522028267D00118A5A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				128ADB9A2046460D002FE727 /* adViewController */,
+				128ADB9E2046460D002FE727 /* webViewController */,
 				129AAD552028273C00118A5A /* YZTabBarController.h */,
 				129AAD562028273C00118A5A /* YZTabBarController.m */,
 				127F0CB72031A317006FDAEE /* YZNavigationViewController.h */,
 				127F0CB82031A317006FDAEE /* YZNavigationViewController.m */,
-				1222DA0D2043ADB8006A6D2A /* YZAdViewController.h */,
-				1222DA0E2043ADB8006A6D2A /* YZAdViewController.m */,
-				1222DA102043ADD8006A6D2A /* YZAdViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -141,6 +179,7 @@
 		129AAD532028267D00118A5A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				122829F72045453D00DC336F /* AdModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -365,6 +404,8 @@
 			children = (
 				12C81AF42022B008004AC296 /* YZBDJ */,
 				12C81AF32022B008004AC296 /* Products */,
+				5BEFF3417CC71D647AB68FEE /* Pods */,
+				CBD2322D389F62129A0D6671 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -389,6 +430,23 @@
 			path = YZBDJ;
 			sourceTree = "<group>";
 		};
+		5BEFF3417CC71D647AB68FEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6F06AF89FC6CF8C4FFC66 /* Pods-YZBDJ.debug.xcconfig */,
+				F93D99E7F9B2D546E313E177 /* Pods-YZBDJ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CBD2322D389F62129A0D6671 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BB0ADAD862EBE638E904F02 /* libPods-YZBDJ.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -396,9 +454,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12C81B082022B008004AC296 /* Build configuration list for PBXNativeTarget "YZBDJ" */;
 			buildPhases = (
+				0A63215D7C01A4C21EF034F0 /* [CP] Check Pods Manifest.lock */,
 				12C81AEE2022B008004AC296 /* Sources */,
 				12C81AEF2022B008004AC296 /* Frameworks */,
 				12C81AF02022B008004AC296 /* Resources */,
+				D877CD56047F39A5E1922474 /* [CP] Embed Pods Frameworks */,
+				9F2D7F49622502A2E7E71594 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -451,18 +512,66 @@
 				12C81B022022B008004AC296 /* LaunchScreen.storyboard in Resources */,
 				1222DA1E2043B5F2006A6D2A /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				12C81AFF2022B008004AC296 /* Assets.xcassets in Resources */,
+				128ADBA22046460D002FE727 /* YZAdViewController.xib in Resources */,
 				1222DA202043B5F2006A6D2A /* LaunchImage@2x.png in Resources */,
 				1222DA1B2043B5F2006A6D2A /* LaunchImage-700-568h@2x.png in Resources */,
 				1222DA1D2043B5F2006A6D2A /* LaunchImage-800-667h@2x.png in Resources */,
 				1222DA1A2043B5F2006A6D2A /* LaunchImage-568h@2x.png in Resources */,
 				1222DA1F2043B5F2006A6D2A /* LaunchImage.png in Resources */,
-				1222DA112043ADD8006A6D2A /* YZAdViewController.xib in Resources */,
 				1222DA1C2043B5F2006A6D2A /* LaunchImage-700@2x.png in Resources */,
 				12C81AFD2022B008004AC296 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A63215D7C01A4C21EF034F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F2D7F49622502A2E7E71594 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YZBDJ/Pods-YZBDJ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D877CD56047F39A5E1922474 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YZBDJ/Pods-YZBDJ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		12C81AEE2022B008004AC296 /* Sources */ = {
@@ -475,15 +584,17 @@
 				129AAD572028273C00118A5A /* YZTabBarController.m in Sources */,
 				12A555BE20244EF5000303BD /* AppDelegate.m in Sources */,
 				129AAD5B20282EA500118A5A /* UIImage+YZImage.m in Sources */,
+				128ADBA12046460D002FE727 /* YZAdViewController.m in Sources */,
 				127F0CBC2031A8B3006FDAEE /* YZSettingViewController.m in Sources */,
 				127F0CB220318361006FDAEE /* UIView+YZFrame.m in Sources */,
 				127F0CB92031A317006FDAEE /* YZNavigationViewController.m in Sources */,
 				12A555C9202454C3000303BD /* YZMeViewController.m in Sources */,
 				127F0CB6203190A6006FDAEE /* UIBarButtonItem+YZBarButtonItem.m in Sources */,
 				12A555CF202454E4000303BD /* YZPublishViewController.m in Sources */,
+				128ADBA32046460D002FE727 /* YZWebViewController.m in Sources */,
 				12A555CC202454D4000303BD /* YZNewViewController.m in Sources */,
 				12A555C5202454A8000303BD /* YZFriendTrendViewController.m in Sources */,
-				1222DA0F2043ADB8006A6D2A /* YZAdViewController.m in Sources */,
+				122829FA2045453D00DC336F /* YZAdModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +728,7 @@
 		};
 		12C81B092022B008004AC296 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3A6F06AF89FC6CF8C4FFC66 /* Pods-YZBDJ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -632,6 +744,7 @@
 		};
 		12C81B0A2022B008004AC296 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F93D99E7F9B2D546E313E177 /* Pods-YZBDJ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

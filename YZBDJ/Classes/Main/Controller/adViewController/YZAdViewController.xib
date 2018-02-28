@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YZAdViewController">
             <connections>
+                <outlet property="adContainView" destination="zNT-Fy-0wW" id="n75-NZ-3EF"/>
                 <outlet property="adImage" destination="6ij-1t-PAD" id="AHj-Wd-kNa"/>
                 <outlet property="jumpBtn" destination="ETc-vL-kcz" id="Nbx-ZW-9xD"/>
                 <outlet property="view" destination="iN0-l3-epB" id="9X8-lF-t8f"/>
@@ -24,11 +25,15 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6ij-1t-PAD">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETc-vL-kcz">
-                    <rect key="frame" x="290" y="20" width="65" height="30"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNT-Fy-0wW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETc-vL-kcz">
+                    <rect key="frame" x="275" y="20" width="80" height="34"/>
                     <color key="backgroundColor" white="0.0" alpha="0.36081977739726034" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="65" id="9dV-2g-8jX"/>
+                        <constraint firstAttribute="width" constant="80" id="9dV-2g-8jX"/>
                     </constraints>
                     <state key="normal" title="跳过(3s)">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -38,11 +43,15 @@
             <color key="backgroundColor" red="0.28909565729999998" green="1" blue="0.2094127043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="6ij-1t-PAD" secondAttribute="bottom" id="E5t-kR-wFl"/>
+                <constraint firstItem="zNT-Fy-0wW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Mw2-gy-Z9e"/>
                 <constraint firstItem="6ij-1t-PAD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Q1W-mO-CWY"/>
+                <constraint firstItem="zNT-Fy-0wW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gMX-fh-hvp"/>
                 <constraint firstItem="ETc-vL-kcz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="llu-sC-WFR"/>
+                <constraint firstAttribute="bottom" secondItem="zNT-Fy-0wW" secondAttribute="bottom" id="n0w-km-Bb7"/>
                 <constraint firstAttribute="trailing" secondItem="ETc-vL-kcz" secondAttribute="trailing" constant="20" id="nl0-2D-Vkj"/>
                 <constraint firstAttribute="trailing" secondItem="6ij-1t-PAD" secondAttribute="trailing" id="oAI-qI-g9a"/>
                 <constraint firstItem="6ij-1t-PAD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="u0S-sn-4Ud"/>
+                <constraint firstAttribute="trailing" secondItem="zNT-Fy-0wW" secondAttribute="trailing" id="wbz-8m-TMd"/>
             </constraints>
         </view>
     </objects>
