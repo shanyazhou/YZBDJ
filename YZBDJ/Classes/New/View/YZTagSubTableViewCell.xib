@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tagSubCellID" rowHeight="67" id="KGk-i7-Jjw" customClass="YZTagSubTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="337" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ple-gY-nPY">
+                        <rect key="frame" x="10" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="MwT-vb-OcV"/>
+                            <constraint firstAttribute="width" constant="60" id="gY8-WU-Hl3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="社会新闻" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6l-iV-7lv">
+                        <rect key="frame" x="80" y="10.5" width="69.5" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8276人订阅" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCu-Va-WBh">
+                        <rect key="frame" x="80" y="52.5" width="76.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6E-cY-YNe">
+                        <rect key="frame" x="267" y="25" width="59" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="+订阅">
+                            <color key="titleColor" red="1" green="0.27074302020000002" blue="0.2937134777" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Y6l-iV-7lv" firstAttribute="leading" secondItem="ple-gY-nPY" secondAttribute="trailing" constant="10" id="VTQ-VL-JK6"/>
+                    <constraint firstItem="ple-gY-nPY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gtI-Cv-zaw"/>
+                    <constraint firstItem="ple-gY-nPY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="jLn-MZ-jxu"/>
+                    <constraint firstItem="iCu-Va-WBh" firstAttribute="bottom" secondItem="ple-gY-nPY" secondAttribute="bottom" id="mGc-tA-oDt"/>
+                    <constraint firstItem="iCu-Va-WBh" firstAttribute="leading" secondItem="Y6l-iV-7lv" secondAttribute="leading" id="oaP-A1-XQi"/>
+                    <constraint firstItem="Y6l-iV-7lv" firstAttribute="top" secondItem="ple-gY-nPY" secondAttribute="top" id="sAb-dI-W4C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="ple-gY-nPY" id="fv6-Qp-D2h"/>
+                <outlet property="subNumLabel" destination="iCu-Va-WBh" id="LxG-sa-Yd2"/>
+                <outlet property="themeLabel" destination="Y6l-iV-7lv" id="8wO-uD-Ynw"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="63"/>
+        </tableViewCell>
+    </objects>
+</document>

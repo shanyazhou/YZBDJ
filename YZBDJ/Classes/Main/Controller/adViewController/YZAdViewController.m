@@ -65,6 +65,10 @@
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager manager] GET:@"http://mobads.baidu.com/cpro/ui/mads.php" parameters:para progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *  _Nullable responseObject) {
 //        YZLog(@"%@",responseObject);
         NSDictionary *adDict = [responseObject[@"ad"] lastObject];
+        
+        if (adDict == nil) {
+            return;
+        }
         self.adModel = [YZAdModel mj_objectWithKeyValues:adDict];
 //        [YZAdModel mj_setKeyValues:adDict]
 //        [YZAdModel mj_objectWithKeyValues:adDict];
