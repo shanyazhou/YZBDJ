@@ -14,4 +14,7 @@
 @property CGFloat yz_height;
 @property CGFloat yz_x;
 @property CGFloat yz_y;
+@property CGFloat yz_centerX;
+@property CGFloat yz_centerY;
+@property CGPoint yz_center;
 @end
