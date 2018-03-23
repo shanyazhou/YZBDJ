@@ -81,7 +81,7 @@
     [self addChildViewController:nav3];
     
     //我
-    YZMeViewController *meVc = [[YZMeViewController alloc] init];
+    YZMeViewController *meVc = [[UIStoryboard storyboardWithName:@"YZMeViewController" bundle:nil] instantiateInitialViewController];
     YZNavigationViewController *nav4 = [[YZNavigationViewController alloc] initWithRootViewController:meVc];
     [self addChildViewController:nav4];
 }

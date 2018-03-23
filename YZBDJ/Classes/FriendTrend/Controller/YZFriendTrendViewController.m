@@ -30,12 +30,7 @@
 }
 
 - (IBAction)loginBtnClick:(UIButton *)sender {
-    
-    
     YZLoginViewController *loginVc = [[YZLoginViewController alloc] init];
-//    loginVc.hidesBottomBarWhenPushed = YES;
-//    [self.navigationController pushViewController:loginVc animated:YES];
-    
     [self presentViewController:loginVc animated:YES completion:nil];
 }
 @end

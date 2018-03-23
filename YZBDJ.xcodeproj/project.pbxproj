@@ -23,6 +23,10 @@
 		122311D9204E51C800BA5B5B /* YZLoginMiddleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 122311D8204E51C800BA5B5B /* YZLoginMiddleView.m */; };
 		122311DB204E51D700BA5B5B /* YZLoginMiddleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 122311DA204E51D700BA5B5B /* YZLoginMiddleView.xib */; };
 		122829FA2045453D00DC336F /* YZAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 122829F92045453D00DC336F /* YZAdModel.m */; };
+		127046A2204F81A4006D7C0F /* YZMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127046A1204F81A4006D7C0F /* YZMeViewController.storyboard */; };
+		127046A6204FB3EA006D7C0F /* YZMeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 127046A4204FB3EA006D7C0F /* YZMeCollectionViewCell.m */; };
+		127046A7204FB3EA006D7C0F /* YZMeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 127046A5204FB3EA006D7C0F /* YZMeCollectionViewCell.xib */; };
+		127046AA204FB8D2006D7C0F /* YZMeCollectionViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 127046A9204FB8D2006D7C0F /* YZMeCollectionViewCellModel.m */; };
 		127F0CB220318361006FDAEE /* UIView+YZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 127F0CB120318361006FDAEE /* UIView+YZFrame.m */; };
 		127F0CB6203190A6006FDAEE /* UIBarButtonItem+YZBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 127F0CB5203190A6006FDAEE /* UIBarButtonItem+YZBarButtonItem.m */; };
 		127F0CB92031A317006FDAEE /* YZNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 127F0CB82031A317006FDAEE /* YZNavigationViewController.m */; };
@@ -74,6 +78,12 @@
 		122311DA204E51D700BA5B5B /* YZLoginMiddleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YZLoginMiddleView.xib; sourceTree = "<group>"; };
 		122829F82045453D00DC336F /* YZAdModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZAdModel.h; sourceTree = "<group>"; };
 		122829F92045453D00DC336F /* YZAdModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZAdModel.m; sourceTree = "<group>"; };
+		127046A1204F81A4006D7C0F /* YZMeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YZMeViewController.storyboard; sourceTree = "<group>"; };
+		127046A3204FB3EA006D7C0F /* YZMeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZMeCollectionViewCell.h; sourceTree = "<group>"; };
+		127046A4204FB3EA006D7C0F /* YZMeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZMeCollectionViewCell.m; sourceTree = "<group>"; };
+		127046A5204FB3EA006D7C0F /* YZMeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YZMeCollectionViewCell.xib; sourceTree = "<group>"; };
+		127046A8204FB8D2006D7C0F /* YZMeCollectionViewCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZMeCollectionViewCellModel.h; sourceTree = "<group>"; };
+		127046A9204FB8D2006D7C0F /* YZMeCollectionViewCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZMeCollectionViewCellModel.m; sourceTree = "<group>"; };
 		127F0CB020318361006FDAEE /* UIView+YZFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YZFrame.h"; sourceTree = "<group>"; };
 		127F0CB120318361006FDAEE /* UIView+YZFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YZFrame.m"; sourceTree = "<group>"; };
 		127F0CB320318457006FDAEE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -91,7 +101,7 @@
 		128ADB9F2046460D002FE727 /* YZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZWebViewController.h; sourceTree = "<group>"; };
 		128ADBA02046460D002FE727 /* YZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZWebViewController.m; sourceTree = "<group>"; };
 		129AAD552028273C00118A5A /* YZTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZTabBarController.h; sourceTree = "<group>"; };
-		129AAD562028273C00118A5A /* YZTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZTabBarController.m; sourceTree = "<group>"; };
+		129AAD562028273C00118A5A /* YZTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZTabBarController.m; sourceTree = "<group>"; wrapsLines = 1; };
 		129AAD5920282EA500118A5A /* UIImage+YZImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+YZImage.h"; sourceTree = "<group>"; };
 		129AAD5A20282EA500118A5A /* UIImage+YZImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YZImage.m"; sourceTree = "<group>"; };
 		12A555B720244EF5000303BD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -102,7 +112,7 @@
 		12A555C3202454A8000303BD /* YZFriendTrendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZFriendTrendViewController.h; sourceTree = "<group>"; };
 		12A555C4202454A8000303BD /* YZFriendTrendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZFriendTrendViewController.m; sourceTree = "<group>"; };
 		12A555C7202454C3000303BD /* YZMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZMeViewController.h; sourceTree = "<group>"; };
-		12A555C8202454C3000303BD /* YZMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZMeViewController.m; sourceTree = "<group>"; };
+		12A555C8202454C3000303BD /* YZMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZMeViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
 		12A555CA202454D4000303BD /* YZNewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZNewViewController.h; sourceTree = "<group>"; };
 		12A555CB202454D4000303BD /* YZNewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZNewViewController.m; sourceTree = "<group>"; };
 		12A555CD202454E4000303BD /* YZPublishViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZPublishViewController.h; sourceTree = "<group>"; };
@@ -351,6 +361,7 @@
 			children = (
 				12A555C7202454C3000303BD /* YZMeViewController.h */,
 				12A555C8202454C3000303BD /* YZMeViewController.m */,
+				127046A1204F81A4006D7C0F /* YZMeViewController.storyboard */,
 				127F0CBA2031A8B3006FDAEE /* YZSettingViewController.h */,
 				127F0CBB2031A8B3006FDAEE /* YZSettingViewController.m */,
 			);
@@ -360,6 +371,8 @@
 		12A555B020244EF5000303BD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				127046A8204FB8D2006D7C0F /* YZMeCollectionViewCellModel.h */,
+				127046A9204FB8D2006D7C0F /* YZMeCollectionViewCellModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -367,6 +380,9 @@
 		12A555B120244EF5000303BD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				127046A3204FB3EA006D7C0F /* YZMeCollectionViewCell.h */,
+				127046A4204FB3EA006D7C0F /* YZMeCollectionViewCell.m */,
+				127046A5204FB3EA006D7C0F /* YZMeCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -584,10 +600,12 @@
 				1222DA1B2043B5F2006A6D2A /* LaunchImage-700-568h@2x.png in Resources */,
 				122311D6204E405100BA5B5B /* YZFastLoginView.xib in Resources */,
 				1222DA1D2043B5F2006A6D2A /* LaunchImage-800-667h@2x.png in Resources */,
+				127046A7204FB3EA006D7C0F /* YZMeCollectionViewCell.xib in Resources */,
 				1222DA1A2043B5F2006A6D2A /* LaunchImage-568h@2x.png in Resources */,
 				1222DA1F2043B5F2006A6D2A /* LaunchImage.png in Resources */,
 				1222DA1C2043B5F2006A6D2A /* LaunchImage-700@2x.png in Resources */,
 				122311DB204E51D700BA5B5B /* YZLoginMiddleView.xib in Resources */,
+				127046A2204F81A4006D7C0F /* YZMeViewController.storyboard in Resources */,
 				12012F8C204942E100C0BFCF /* YZTagSubTableViewCell.xib in Resources */,
 				12C81AFD2022B008004AC296 /* Main.storyboard in Resources */,
 				12A799DD204D30A800083576 /* YZFriendTrendViewController.xib in Resources */,
@@ -652,8 +670,10 @@
 				122311D4204E400D00BA5B5B /* YZFastLoginView.m in Sources */,
 				12A555C22024502C000303BD /* YZEssenceViewController.m in Sources */,
 				12A555BF20244EF5000303BD /* main.m in Sources */,
+				127046AA204FB8D2006D7C0F /* YZMeCollectionViewCellModel.m in Sources */,
 				1286C548202D90F900A517F5 /* YZTabBar.m in Sources */,
 				122311D9204E51C800BA5B5B /* YZLoginMiddleView.m in Sources */,
+				127046A6204FB3EA006D7C0F /* YZMeCollectionViewCell.m in Sources */,
 				129AAD572028273C00118A5A /* YZTabBarController.m in Sources */,
 				12A555BE20244EF5000303BD /* AppDelegate.m in Sources */,
 				12012F842049392E00C0BFCF /* YZTagSubViewController.m in Sources */,

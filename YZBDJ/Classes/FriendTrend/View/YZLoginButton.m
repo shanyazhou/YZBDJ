@@ -15,7 +15,7 @@
 {
     [super layoutSubviews];
     self.imageView.yz_centerX = self.yz_width/2;
-    self.imageView.yz_y = 20;
+    self.imageView.yz_y = 20; 
     
     self.titleLabel.yz_y = CGRectGetMaxY(self.imageView.frame) + 5;
     [self.titleLabel sizeToFit];
