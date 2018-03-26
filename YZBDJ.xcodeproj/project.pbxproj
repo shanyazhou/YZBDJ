@@ -35,6 +35,11 @@
 		128ADBA12046460D002FE727 /* YZAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 128ADB9C2046460D002FE727 /* YZAdViewController.m */; };
 		128ADBA22046460D002FE727 /* YZAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 128ADB9D2046460D002FE727 /* YZAdViewController.xib */; };
 		128ADBA32046460D002FE727 /* YZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 128ADBA02046460D002FE727 /* YZWebViewController.m */; };
+		128E75C02068A7120000F943 /* YZAllTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 128E75BF2068A7120000F943 /* YZAllTableViewController.m */; };
+		128E75C32068AEF70000F943 /* YZVideoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 128E75C22068AEF70000F943 /* YZVideoTableViewController.m */; };
+		128E75C62068AF0E0000F943 /* YZVoiceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 128E75C52068AF0E0000F943 /* YZVoiceTableViewController.m */; };
+		128E75C92068AF270000F943 /* YZImageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 128E75C82068AF270000F943 /* YZImageTableViewController.m */; };
+		128E75CC2068AF330000F943 /* YZWordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 128E75CB2068AF330000F943 /* YZWordTableViewController.m */; };
 		129AAD572028273C00118A5A /* YZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 129AAD562028273C00118A5A /* YZTabBarController.m */; };
 		129AAD5B20282EA500118A5A /* UIImage+YZImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 129AAD5A20282EA500118A5A /* UIImage+YZImage.m */; };
 		12A555BE20244EF5000303BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A555B820244EF5000303BD /* AppDelegate.m */; };
@@ -100,6 +105,16 @@
 		128ADB9D2046460D002FE727 /* YZAdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YZAdViewController.xib; sourceTree = "<group>"; };
 		128ADB9F2046460D002FE727 /* YZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZWebViewController.h; sourceTree = "<group>"; };
 		128ADBA02046460D002FE727 /* YZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZWebViewController.m; sourceTree = "<group>"; };
+		128E75BE2068A7120000F943 /* YZAllTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZAllTableViewController.h; sourceTree = "<group>"; };
+		128E75BF2068A7120000F943 /* YZAllTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZAllTableViewController.m; sourceTree = "<group>"; };
+		128E75C12068AEF70000F943 /* YZVideoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZVideoTableViewController.h; sourceTree = "<group>"; };
+		128E75C22068AEF70000F943 /* YZVideoTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZVideoTableViewController.m; sourceTree = "<group>"; };
+		128E75C42068AF0E0000F943 /* YZVoiceTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZVoiceTableViewController.h; sourceTree = "<group>"; };
+		128E75C52068AF0E0000F943 /* YZVoiceTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZVoiceTableViewController.m; sourceTree = "<group>"; };
+		128E75C72068AF270000F943 /* YZImageTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZImageTableViewController.h; sourceTree = "<group>"; };
+		128E75C82068AF270000F943 /* YZImageTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZImageTableViewController.m; sourceTree = "<group>"; };
+		128E75CA2068AF330000F943 /* YZWordTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZWordTableViewController.h; sourceTree = "<group>"; };
+		128E75CB2068AF330000F943 /* YZWordTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZWordTableViewController.m; sourceTree = "<group>"; };
 		129AAD552028273C00118A5A /* YZTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZTabBarController.h; sourceTree = "<group>"; };
 		129AAD562028273C00118A5A /* YZTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZTabBarController.m; sourceTree = "<group>"; wrapsLines = 1; };
 		129AAD5920282EA500118A5A /* UIImage+YZImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+YZImage.h"; sourceTree = "<group>"; };
@@ -285,6 +300,16 @@
 			children = (
 				12A555C02024502C000303BD /* YZEssenceViewController.h */,
 				12A555C12024502C000303BD /* YZEssenceViewController.m */,
+				128E75BE2068A7120000F943 /* YZAllTableViewController.h */,
+				128E75BF2068A7120000F943 /* YZAllTableViewController.m */,
+				128E75C12068AEF70000F943 /* YZVideoTableViewController.h */,
+				128E75C22068AEF70000F943 /* YZVideoTableViewController.m */,
+				128E75C42068AF0E0000F943 /* YZVoiceTableViewController.h */,
+				128E75C52068AF0E0000F943 /* YZVoiceTableViewController.m */,
+				128E75C72068AF270000F943 /* YZImageTableViewController.h */,
+				128E75C82068AF270000F943 /* YZImageTableViewController.m */,
+				128E75CA2068AF330000F943 /* YZWordTableViewController.h */,
+				128E75CB2068AF330000F943 /* YZWordTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -671,12 +696,16 @@
 				12A555C22024502C000303BD /* YZEssenceViewController.m in Sources */,
 				12A555BF20244EF5000303BD /* main.m in Sources */,
 				127046AA204FB8D2006D7C0F /* YZMeCollectionViewCellModel.m in Sources */,
+				128E75CC2068AF330000F943 /* YZWordTableViewController.m in Sources */,
 				1286C548202D90F900A517F5 /* YZTabBar.m in Sources */,
 				122311D9204E51C800BA5B5B /* YZLoginMiddleView.m in Sources */,
 				127046A6204FB3EA006D7C0F /* YZMeCollectionViewCell.m in Sources */,
 				129AAD572028273C00118A5A /* YZTabBarController.m in Sources */,
+				128E75C92068AF270000F943 /* YZImageTableViewController.m in Sources */,
+				128E75C32068AEF70000F943 /* YZVideoTableViewController.m in Sources */,
 				12A555BE20244EF5000303BD /* AppDelegate.m in Sources */,
 				12012F842049392E00C0BFCF /* YZTagSubViewController.m in Sources */,
+				128E75C62068AF0E0000F943 /* YZVoiceTableViewController.m in Sources */,
 				12A799E2204D353600083576 /* YZLoginViewController.m in Sources */,
 				129AAD5B20282EA500118A5A /* UIImage+YZImage.m in Sources */,
 				128ADBA12046460D002FE727 /* YZAdViewController.m in Sources */,
@@ -690,6 +719,7 @@
 				12A555CF202454E4000303BD /* YZPublishViewController.m in Sources */,
 				128ADBA32046460D002FE727 /* YZWebViewController.m in Sources */,
 				12A799E6204D440900083576 /* YZLoginButton.m in Sources */,
+				128E75C02068A7120000F943 /* YZAllTableViewController.m in Sources */,
 				12A555CC202454D4000303BD /* YZNewViewController.m in Sources */,
 				12A555C5202454A8000303BD /* YZFriendTrendViewController.m in Sources */,
 				122829FA2045453D00DC336F /* YZAdModel.m in Sources */,
