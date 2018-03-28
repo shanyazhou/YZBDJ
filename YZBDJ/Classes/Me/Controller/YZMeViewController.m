@@ -44,6 +44,29 @@
     self.tableView.sectionFooterHeight = 10;
     
     self.tableView.contentInset = UIEdgeInsetsMake(-25, 0, 0, 0);
+    
+    [self getNotification];
+}
+
+- (void)getNotification
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tabBarClick) name:@"TabBarDoubleClickRefresh" object:nil];
+}
+
+#pragma mark - dealloc
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark - action
+- (void)tabBarClick
+{
+    //YZLog(@"%@,%@,%@",self, self.view, self.view.window);
+    //首先，谁都能接收到，因此，必须找到当前显示view刷新
+    if (self.view.window == nil) return;//如果不显示，则 self.view.window == nil 重要知识点
+    
+    YZLog(@"%@-刷新",self.class);
 }
 
 - (void)setupNavBar
@@ -83,7 +106,7 @@
     parameters[@"a"] = @"square";
     parameters[@"c"] = @"topic";
     [manage GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        YZLog(@"%@",responseObject);
+//        YZLog(@"%@",responseObject);
         
         NSArray *square_listArray = responseObject[@"square_list"];
         self.collectionCellModelsArray = [YZMeCollectionViewCellModel mj_objectArrayWithKeyValuesArray:square_listArray];

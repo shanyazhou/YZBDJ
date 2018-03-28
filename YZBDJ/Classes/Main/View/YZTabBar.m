@@ -10,6 +10,7 @@
 
 @interface YZTabBar()
 @property (weak, nonatomic) UIButton *plusBtn;
+@property (weak, nonatomic) UIControl *preTabBar;
 @end
 
 @implementation YZTabBar
@@ -35,8 +36,15 @@
     CGFloat btnW = self.yz_width / count;
     CGFloat btnH = self.yz_height;
     int i = 0;
-    for (UIView *btn in self.subviews) {
+    for (UIControl *btn in self.subviews) {//通过这个 YZLog(@"%@",btn.superclass); 知道，btn是UIControl类型的
         if ([btn isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+            
+            [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+            
+            if (i == 0 && self.preTabBar == nil) {
+                self.preTabBar = btn;
+            }
+            
             if (i == 2) {
                 i += 1;
             }
@@ -46,5 +54,17 @@
     }
     self.plusBtn.center = CGPointMake(self.yz_width * 0.5, self.yz_height * 0.5);
 }
+
+//尽量不要在这里直接去切换控制器，tabbar的工作量太大，发放下去，谁的事情谁去做
+//一对多，用通知
+- (void)btnClick:(UIControl *)btn
+{
+    if (self.preTabBar == btn) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"TabBarDoubleClickRefresh" object:self];
+    }
+    
+    self.preTabBar = btn;
+}
+
 
 @end

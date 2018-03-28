@@ -140,6 +140,10 @@
 #pragma mark - action
 - (void)titleBtnClick:(UIButton *)btn
 {
+    if (self.preTitleBtn == btn) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"TitleBtnDoubleClickRefresh" object:self];
+    }
+    
     btn.selected = !btn.selected;
     self.preTitleBtn.selected = !btn.selected;
     self.preTitleBtn = btn;
@@ -169,6 +173,7 @@
     YZFUNC;
 }
 
+
 #pragma mark - scrollViewDelegate
 //scrollView结束减速，即，真正的停止
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
@@ -180,4 +185,6 @@
     
     [self titleBtnClick:btn];
 }
+
+
 @end

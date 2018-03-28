@@ -21,6 +21,40 @@
     
     
     self.tableView.contentInset = UIEdgeInsetsMake(35, 0, 0, 0);
+    
+    
+    [self getNotification];
+}
+
+- (void)getNotification
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tabBarClick) name:@"TabBarDoubleClickRefresh" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(titleBtnClick) name:@"TitleBtnDoubleClickRefresh" object:nil];
+}
+
+#pragma mark - dealloc
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark - action
+- (void)tabBarClick
+{
+    //YZLog(@"%@,%@,%@",self, self.view, self.view.window);
+    //首先，谁都能接收到，因此，必须找到当前显示view刷新
+    if (self.view.window == nil) return;//如果不显示，则 self.view.window == nil 重要知识点
+    
+    //现在能确定是在精华界面，但是不知道是（全部、视频、声音），咋办？
+    UIScrollView *scrollView = (UIScrollView *)self.tableView.superview;
+    if (scrollView.contentOffset.x/YZScreenWidth == 4) {
+        YZLog(@"%@-刷新",self.class);
+    }
+}
+
+- (void)titleBtnClick
+{
+    [self tabBarClick];
 }
 
 #pragma mark - tableViewDelegate
