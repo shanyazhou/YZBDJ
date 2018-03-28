@@ -15,7 +15,7 @@
 
 #define titleViewH 35
 
-@interface YZEssenceViewController ()
+@interface YZEssenceViewController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) UIScrollView *scrollView;
 @property (weak, nonatomic) UIView *titleView;
 @property (weak, nonatomic) UIButton *preTitleBtn;
@@ -54,6 +54,7 @@
     scrollView.pagingEnabled = YES;
     scrollView.backgroundColor = [UIColor greenColor];
     scrollView.contentSize = CGSizeMake(5 * YZScreenWidth, 0);
+    scrollView.delegate = self;
     self.scrollView = scrollView;
     [self.view addSubview:scrollView];
 }
@@ -77,6 +78,7 @@
     CGFloat titleBtnY = 0;
     for (int i = 0; i<count; i++) {
         UIButton *btn = [[UIButton alloc] init];
+        btn.tag = i+1;//因为view的tag默认是0，因此，tag尽量不要以0开始
         btn.font = [UIFont systemFontOfSize:16];
         btn.frame = CGRectMake(i * titleBtnW, titleBtnY, titleBtnW, titleBtnH);
         [btn setTitle:titleBtnNameArray[i] forState:UIControlStateNormal];
@@ -146,6 +148,15 @@
         self.line.yz_width = [btn.currentTitle sizeWithFont:btn.font].width + 10;
         self.line.yz_centerX = btn.yz_centerX;
     }];
+    
+    //tableView与标题的联动
+    for (int i = 0; i<5; i++) {
+        if (btn.tag == i+1) {
+            [UIView animateWithDuration:0.3 animations:^{
+                self.scrollView.contentOffset = CGPointMake(i*YZScreenWidth, 0);
+            }];
+        }
+    }
 }
 
 - (void)gameClick
@@ -156,5 +167,17 @@
 - (void)randomClick
 {
     YZFUNC;
+}
+
+#pragma mark - scrollViewDelegate
+//scrollView结束减速，即，真正的停止
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    //偏移量/屏幕宽度=第几个按钮
+    NSInteger i = self.scrollView.contentOffset.x/YZScreenWidth;
+    
+    UIButton *btn = self.titleView.subviews[i];
+    
+    [self titleBtnClick:btn];
 }
 @end
