@@ -34,6 +34,9 @@
     [self setupTitleView];
     
     [self setupChildsVc];
+    
+    //添加第0个控制器
+    [self addChildViewIntoScrollView:0];
 }
 
 - (void)setupNav
@@ -130,11 +133,11 @@
     YZWordTableViewController *wordlVc = [[YZWordTableViewController alloc] init];
     [self addChildViewController:wordlVc];
     
-    for (int i = 0; i<5; i++) {
-        UIView *childView = self.childViewControllers[i].view;
-        childView.frame = CGRectMake(i * YZScreenWidth, 0, YZScreenWidth, YZScreenHeight);
-        [self.scrollView addSubview:childView];
-    }
+//    for (int i = 0; i<5; i++) {
+//        UIView *childView = self.childViewControllers[i].view;
+//        childView.frame = CGRectMake(i * YZScreenWidth, 0, YZScreenWidth, YZScreenHeight);
+//        [self.scrollView addSubview:childView];
+//    }
 }
 
 #pragma mark - action
@@ -148,10 +151,15 @@
     self.preTitleBtn.selected = !btn.selected;
     self.preTitleBtn = btn;
     
+    NSUInteger index = btn.tag - 1;
+    
     [UIView animateWithDuration:0.3 animations:^{
         self.line.yz_width = [btn.currentTitle sizeWithFont:btn.font].width + 10;
         self.line.yz_centerX = btn.yz_centerX;
+    } completion:^(BOOL finished) {
+        [self addChildViewIntoScrollView:index];
     }];
+    
     
     //tableView与标题的联动
     for (int i = 0; i<5; i++) {
@@ -173,6 +181,12 @@
     YZFUNC;
 }
 
+- (void)addChildViewIntoScrollView:(NSUInteger)index
+{
+    UIView *childView = self.childViewControllers[index].view;
+    childView.frame = CGRectMake(index * YZScreenWidth, 0, YZScreenWidth, YZScreenHeight);
+    [self.scrollView addSubview:childView];
+}
 
 #pragma mark - scrollViewDelegate
 //scrollView结束减速，即，真正的停止
