@@ -53,6 +53,7 @@
 		12A799E2204D353600083576 /* YZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A799E0204D353600083576 /* YZLoginViewController.m */; };
 		12A799E3204D353600083576 /* YZLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12A799E1204D353600083576 /* YZLoginViewController.xib */; };
 		12A799E6204D440900083576 /* YZLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A799E5204D440900083576 /* YZLoginButton.m */; };
+		12B7F4D520F8808D003EC142 /* YZTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B7F4D420F8808D003EC142 /* YZTopic.m */; };
 		12C81AFD2022B008004AC296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C81AFB2022B008004AC296 /* Main.storyboard */; };
 		12C81AFF2022B008004AC296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C81AFE2022B008004AC296 /* Assets.xcassets */; };
 		12C81B022022B008004AC296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C81B002022B008004AC296 /* LaunchScreen.storyboard */; };
@@ -138,6 +139,8 @@
 		12A799E1204D353600083576 /* YZLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YZLoginViewController.xib; sourceTree = "<group>"; };
 		12A799E4204D440900083576 /* YZLoginButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZLoginButton.h; sourceTree = "<group>"; };
 		12A799E5204D440900083576 /* YZLoginButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZLoginButton.m; sourceTree = "<group>"; };
+		12B7F4D320F8808D003EC142 /* YZTopic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZTopic.h; sourceTree = "<group>"; };
+		12B7F4D420F8808D003EC142 /* YZTopic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZTopic.m; sourceTree = "<group>"; };
 		12C81AF22022B008004AC296 /* YZBDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YZBDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C81AFC2022B008004AC296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12C81AFE2022B008004AC296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -317,6 +320,8 @@
 		12A555A820244EF5000303BD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				12B7F4D320F8808D003EC142 /* YZTopic.h */,
+				12B7F4D420F8808D003EC142 /* YZTopic.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -714,6 +719,7 @@
 				12012F8B204942E100C0BFCF /* YZTagSubTableViewCell.m in Sources */,
 				127F0CB92031A317006FDAEE /* YZNavigationViewController.m in Sources */,
 				12012F8720493DFD00C0BFCF /* YZTagSubCellModel.m in Sources */,
+				12B7F4D520F8808D003EC142 /* YZTopic.m in Sources */,
 				12A555C9202454C3000303BD /* YZMeViewController.m in Sources */,
 				127F0CB6203190A6006FDAEE /* UIBarButtonItem+YZBarButtonItem.m in Sources */,
 				12A555CF202454E4000303BD /* YZPublishViewController.m in Sources */,
@@ -860,7 +866,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9GSEXWNVBW;
+				DEVELOPMENT_TEAM = 9P42297SD3;
 				INFOPLIST_FILE = YZBDJ/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -876,7 +882,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9GSEXWNVBW;
+				DEVELOPMENT_TEAM = 9P42297SD3;
 				INFOPLIST_FILE = YZBDJ/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

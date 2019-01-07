@@ -55,7 +55,7 @@
     UIScrollView *scrollView = [[UIScrollView alloc] init];
     scrollView.frame = CGRectMake(0, 0, YZScreenWidth, YZScreenHeight);
     scrollView.pagingEnabled = YES;
-    scrollView.backgroundColor = [UIColor greenColor];
+//    scrollView.backgroundColor = [UIColor greenColor];
     scrollView.contentSize = CGSizeMake(5 * YZScreenWidth, 0);
     scrollView.delegate = self;
     self.scrollView = scrollView;

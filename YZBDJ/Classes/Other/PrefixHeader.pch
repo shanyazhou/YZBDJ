@@ -31,6 +31,8 @@
 
 #define YZFUNC YZLog(@"%s",__func__)
 
+#define YZCommonURL @"http://api.budejie.com/api/api_open.php"
+
 #import "UIView+YZFrame.h"
 #import "UIBarButtonItem+YZBarButtonItem.h"
 #import <MJExtension.h>
